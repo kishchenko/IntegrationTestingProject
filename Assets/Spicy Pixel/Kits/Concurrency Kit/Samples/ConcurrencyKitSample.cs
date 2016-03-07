@@ -57,6 +57,9 @@ namespace SpicyPixel.Threading
 			Log("Starting ExampleCoroutine on the main Unity thread.");
 			yield return new YieldForSeconds(2f);
 			Log("Finshed ExampleCoroutine in 2s.");
+
+            // Our test passed succesfully
+            IntegrationTest.Pass();
 		}
 
 		void OnGUI() {
